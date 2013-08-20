@@ -392,7 +392,7 @@ libc_common_src_files += \
 ifeq ($(TARGET_ARCH_VARIANT_CPU),cortex-a15)
 libc_common_src_files += arch-arm/bionic/memcpy-a15.S
 else
-libc_common_src_files += arch-arm/bionic/memcpy.S
+libc_common_src_files += arch-arm/bionic/memcpy.a9.S
 endif
 
 # Check if we want a neonized version of memmove instead of the
